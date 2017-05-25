@@ -1,6 +1,7 @@
 <H1>Pocketmine KnockbackFFA Plugin by @McpeBooster</H1>
 
-[![Poggit-CI](https://poggit.pmmp.io/ci.badge/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA-McpeBooster)](https://poggit.pmmp.io/ci/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA-McpeBooster)
+[<img src="https://img.shields.io/badge/Poggit-view-brightgreen.svg" width="100" height="25" />](https://poggit.pmmp.io/ci/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA-McpeBooster)
+[<img src="https://img.shields.io/badge/Discord-join-697EC4.svg" width="100" height="25" />](https://www.discord.gg/W8casMf/)
 
 <br>
 
