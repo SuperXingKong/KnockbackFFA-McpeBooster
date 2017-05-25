@@ -1,0 +1,6 @@
+name: KnockbackFFA
+main: KnockbackFFA\KnockbackFFA
+version: 1.0.0
+api: [2.0.0, 3.0.0-ALPHA5, 3.0.0-ALPHA6]
+author: McpeBooster
+website: Twitter.com/McpeBooster
