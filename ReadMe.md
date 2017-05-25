@@ -1,6 +1,6 @@
 <H1>Pocketmine KnockbackFFA Plugin by @McpeBooster</H1>
 
-[![Poggit-CI](https://poggit.pmmp.io/ci.badge/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA)](https://poggit.pmmp.io/ci/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA)
+[![Poggit-CI](https://poggit.pmmp.io/ci.badge/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA-McpeBooster)](https://poggit.pmmp.io/ci/McpeBooster/KnockbackFFA-McpeBooster/KnockbackFFA-McpeBooster)
 
 <br>
 
