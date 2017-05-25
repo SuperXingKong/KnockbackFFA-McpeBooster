@@ -96,7 +96,7 @@ class KnockbackFFA extends PluginBase implements Listener{
 					$arenalevel = $this->getServer()->getLevelByName($event->getLine(1));
 					$playercount = count($arenalevel->getPlayers());
 					$maxplayer = $this->getConfig()->get("MaxPlayer");
-					$event->setLine(3, "§f".$playercount." §7/ §c".$mayplayer);
+					$event->setLine(3, "§f".$playercount." §7/ §c".$maxplayer);
 					return;
 				}
 			}
