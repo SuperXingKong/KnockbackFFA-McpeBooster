@@ -250,16 +250,18 @@ class KnockbackFFA extends PluginBase implements Listener{
 		$lobby = $this->getServer()->getDefaultLevel();
 		if($this->getServer()->isLevelLoaded($lobby->getFolderName())){
 			foreach($lobby->getTiles() as $tile){
-				$signt = $tile->getText();
-				if($signt[0] == $this->signprefix){
-					$arena = $signt[1];
-					$arenalevel = $this->getServer()->getLevelByName($arena);
-					$playercount = count($arenalevel->getPlayers());
-					$maxplayer = $this->getConfig()->get("MaxPlayer");
-					if($playercount >= $maxplayer){
-						$tile->setText($signt[0], $arena, "§cFull", "§f".$playercount." §7/ §c".$maxplayer);
-					}else{
-						$tile->setText($signt[0], $arena, "§aJoin", "§f".$playercount." §7/ §c".$maxplayer);
+				if($tile instanceof Sign){
+					$signt = $tile->getText();
+					if($signt[0] == $this->signprefix){
+						$arena = $signt[1];
+						$arenalevel = $this->getServer()->getLevelByName($arena);
+						$playercount = count($arenalevel->getPlayers());
+						$maxplayer = $this->getConfig()->get("MaxPlayer");
+						if($playercount >= $maxplayer){
+							$tile->setText($signt[0], $arena, "§cFull", "§f".$playercount." §7/ §c".$maxplayer);
+						}else{
+							$tile->setText($signt[0], $arena, "§aJoin", "§f".$playercount." §7/ §c".$maxplayer);
+						}
 					}
 				}
 			}
