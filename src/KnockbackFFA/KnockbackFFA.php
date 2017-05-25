@@ -12,7 +12,7 @@ use pocketmine\Player;
 use pocketmine\lang\BaseLang;
 use pocketmine\math\Vector3;
 use pocketmine\item\Item;
-use pocketmine\level\sound\{ClickSound};
+use pocketmine\level\sound\ClickSound;
 use pocketmine\item\enchantment\Enchantment;
 use pocketmine\entity\Effect;
 
