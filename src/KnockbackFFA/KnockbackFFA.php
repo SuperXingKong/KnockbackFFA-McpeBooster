@@ -2,9 +2,10 @@
 
 namespace KnockbackFFA;
 
+use KnockbackFFA\checkLevel;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\scheduler\PluginTask;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use pocketmine\tile\Sign;
@@ -385,18 +386,5 @@ class KnockbackFFA extends PluginBase implements Listener{
 				$p->sendPopup("§6".$level);
 			}
 		}
-	}
-}
-
-
-class checkLevel extends PluginTask {
-	
-	public function __construct(KnockbackFFA $plugin){
-		parent::__construct($plugin);
-		$this->plugin = $plugin;
-	}
-	
-	public function onRun($currentTick){
-		$this->plugin->checkLevelTask();
 	}
 }
