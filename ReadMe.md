@@ -34,7 +34,7 @@ Change the language easily in the config.yml
 
 - Multiarena
 
-- Multilang
+- Multilang (English, German, Franze)
 
 - Joinsign
 

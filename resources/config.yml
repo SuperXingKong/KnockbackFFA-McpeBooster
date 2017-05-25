@@ -1,13 +1,13 @@
 # Configuration file for KnockbackFFA
 # KnockbackFFA by @McpeBooster
 
-#If you need help, look at the ReadMe.md
+#If you need help, look at the ReadMe.md or how_to_use.txt
 
 
 #Every change needs an Server Restart!
 
 
-#Language of the Plugin: only supportet eng/deu
+#Language of the Plugin: only supportet eng/deu/fra
 language: eng
 
 
@@ -31,3 +31,7 @@ MaxPlayer: 25
 
 #ProtectionRadius where PvP is disabled
 ProtectionRadius: 5
+
+#Sign
+#Line1: KnockbackFFA
+#Line2: Your Arena world

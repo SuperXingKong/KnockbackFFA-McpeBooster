@@ -29,6 +29,7 @@ class KnockbackFFA extends PluginBase implements Listener{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		
 		$this->saveDefaultConfig();
+		$this->saveResource("how_to_use.txt");
 		$this->prefix = $this->getConfig()->get("Prefix")." ";
 		$this->signprefix = $this->getConfig()->get("Prefix");
 		$this->titlestatus = $this->getConfig()->get("Title");
