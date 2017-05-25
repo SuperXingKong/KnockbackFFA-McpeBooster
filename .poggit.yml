@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/McpeBooster/KnockbackFFA-McpeBooster
+branches:
+- master
+projects:
+  KnockbackFFA-McpeBooster:
+    path: ""
+...
