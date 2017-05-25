@@ -131,8 +131,8 @@ class KnockbackFFA extends PluginBase implements Listener{
 			$welt = $entity->getLevel()->getFolderName();
 			if(in_array($welt, $this->arenas)){
 				$cause = $event->getCause();
-				if ($cause == EntityDamageEvent::CAUSE_ENTITY_ATTACK){
-					if ($event instanceof EntityDamageByEntityEvent){
+				if($cause == EntityDamageEvent::CAUSE_ENTITY_ATTACK){
+					if($event instanceof EntityDamageByEntityEvent){
 						$entity->setHealth(20);
 						$entity->setFood(20);
 						
