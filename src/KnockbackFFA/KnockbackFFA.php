@@ -89,8 +89,8 @@ class KnockbackFFA extends PluginBase implements Listener{
 	#Events
 	
 	public function onSignCreate(SignChangeEvent $event){
-		if($event->getLine(0) == "KnockbackFFA"){
-			if($event->getPlayer()->isOp()){
+		if($event->getPlayer()->hasPermission("knockbackffa.admin"){
+			if($event->getLine(0) == "KnockbackFFA"){
 				if(in_array($event->getLine(1), $this->arenas)){
 					
 					$event->setLine(0, $this->signprefix);
@@ -100,10 +100,11 @@ class KnockbackFFA extends PluginBase implements Listener{
 					$maxplayer = $this->getConfig()->get("MaxPlayer");
 					$event->setLine(3, "§f".$playercount." §7/ §c".$maxplayer);
 					return;
+				}else{
+					$event->setCancelled();
+					return;
 				}
 			}
-			$event->setCancelled();
-			return;
 		}
 	}
 	
