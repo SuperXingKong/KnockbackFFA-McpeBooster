@@ -89,7 +89,7 @@ class KnockbackFFA extends PluginBase implements Listener{
 	#Events
 	
 	public function onSignCreate(SignChangeEvent $event){
-		if($event->getPlayer()->hasPermission("knockbackffa.admin"){
+		if($event->getPlayer()->hasPermission("knockbackffa.admin")){
 			if($event->getLine(0) == "KnockbackFFA"){
 				if(in_array($event->getLine(1), $this->arenas)){
 					
