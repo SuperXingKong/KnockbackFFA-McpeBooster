@@ -22,7 +22,7 @@ use pocketmine\event\block\{SignChangeEvent, BlockBreakEvent, BlockPlaceEvent};
 use pocketmine\event\player\{PlayerInteractEvent, PlayerMoveEvent, PlayerDropItemEvent, PlayerQuitEvent, PlayerJoinEvent, PlayerExhaustEvent};
 use pocketmine\event\entity\{EntityDamageByEntityEvent, EntityDamageEvent, EntityLevelChangeEvent};
 
-use pocketmine\network\mcpe\protocol\{AdventureSettingsPacket};
+use pocketmine\network\protocol\{AdventureSettingsPacket};
 
 class KnockbackFFA extends PluginBase implements Listener{
 	
@@ -218,7 +218,7 @@ class KnockbackFFA extends PluginBase implements Listener{
 		$entity = $event->getEntity();
 		if($entity instanceof Player){
 			$player = $entity;
-			//$welt = $event->getOrigin()->getFolderName();
+			$welt = $event->getOrigin()->getFolderName();
 			$arena = $event->getTarget()->getFolderName();
 			if(in_array($arena, $this->arenas)){
 		
@@ -226,6 +226,11 @@ class KnockbackFFA extends PluginBase implements Listener{
 				$pk->worldImmutable = true;
 				$pk->autoJump = false;
 				$player->dataPacket($pk);				
+			}
+			if(in_array($welt, $this->arenas)){
+			
+			 $player->getInventory()->clearAll();
+			 $player->removeAllEffects();
 			}
 		}
 	}
